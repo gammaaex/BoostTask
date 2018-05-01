@@ -67,7 +67,6 @@ function showDialog() {
 function onMouseClick() {
 
   if (!isEqualsLastUrl(location.href)) {
-
     onNewPageLoaded({});
     updateLastUrl(location.href);
   }
