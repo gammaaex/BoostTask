@@ -65,9 +65,10 @@ function showDialog() {
 }
 
 function onMouseClick() {
-
+  console.log('aaa');
   if (!isEqualsLastUrl(location.href)) {
-    onNewPageLoaded(null);
+    console.log('bbb');
+    onNewPageLoaded({});
     updateLastUrl(location.href);
   }
 

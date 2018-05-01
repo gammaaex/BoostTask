@@ -41,7 +41,7 @@ function onPageLoaded(openedTab) {
 
   if (this.isBlackPage(openedTab)) {
     this.blackPageCount++;
-    if (this.blackPageCount > this.blackPageThreshold) {
+    if (this.blackPageCount >= this.blackPageThreshold) {
       this.onBlackPageFired(openedTab);
     }
   }
