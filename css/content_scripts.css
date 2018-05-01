@@ -1,0 +1,10 @@
+#cheer {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Rounded Mplus 1c";
+  font-weight: 900;
+  color: rgb(72, 133, 237);
+}

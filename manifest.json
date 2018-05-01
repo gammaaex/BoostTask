@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "BoostTask",
+  "description": "this is the extension to boost your task",
+  "version": "0.1",
+  "browser_action": {
+    "default_popup": "html/popup.html"
+  },
+  "icons": {
+    "128": "img/icon_128.png"
+  },
+  "background": {
+    "scripts": [
+      "js/jquery.js",
+      "js/background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches":[
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": ["css/content_scripts.css"],
+      "js": [
+        "js/content_scripts/common.js",
+        "js/jquery.js",
+        "js/jquery-ui.js"
+      ]
+    }
+  ],
+  "options_page": "html/options.html",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "storage"
+  ]
+}
